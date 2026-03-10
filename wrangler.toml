@@ -1,0 +1,12 @@
+name = "simpleproxy-function-ui-15"
+main = "src/control/control_entry.js"
+compatibility_date = "2026-03-01"
+workers_dev = true
+
+[[kv_namespaces]]
+binding = "CONFIG"
+
+[[rules]]
+type = "Text"
+globs = ["**/control/ui/templates/*.js", "**/admin_master.yaml"]
+fallthrough = true

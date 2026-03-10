@@ -1,0 +1,14 @@
+{
+  "name": "simpleproxy-function-ui-15",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "deploy": "npx wrangler deploy",
+    "test": "node --loader ./test_suite/text-template-loader.mjs --test test_suite/*.smoke.test.js"
+  },
+  "dependencies": {
+    "jsonata": "^2.0.6",
+    "yaml": "^2.8.1",
+    "wrangler": "^4.71.0"
+  }
+}

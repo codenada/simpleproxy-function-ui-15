@@ -1,0 +1,18 @@
+admin:
+  docs_url: "https://github.com/codenada/simpleproxy-function-dev/blob/main/README.md"
+  login_page:
+    enabled: true
+    rpm_rate_limit: 20
+  get_admin_token_endpoint:
+    enabled: true
+    rpm_rate_limit: 10
+  browser_challenge:
+    enabled: true
+    difficulty: 4
+    challenge_ttl_seconds: 300
+    verified_cookie_ttl_seconds: 600
+  ip_filter:
+    enabled: false
+    allowed_cidrs:
+      - "0.0.0.0/0"
+      - "::/0"
